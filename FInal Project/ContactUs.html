@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		.container{
+			position: absolute;
+			left: 700px;
+			top: 125px;
+			width: 800px;
+			height: 180px;
+			border: 2px solid black;
+		}
+		.container2{
+			position: absolute;
+			left: 700px;
+			top: 360px;
+			width: 800px;
+			height: 300px;
+			border: 2px solid black;
+		}
+	</style>
+	<script type = "text/javascript">
+			function Validate() {
+			if( document.myForm.Name.value == "" ) {
+			alert( "Please provide your name!" ); document.myForm.Name.focus() ; return false;
+			}
+			if( document.myForm.Email.value == "" ) {
+			alert( "Please provide your Email!" ); document.myForm.EMail.focus() ; return false;
+			}
+			if( document.myForm.Num.value != 10 || isNaN( document.myForm.Num.value ) ) {
+			alert( "Please provide proper number!" ); document.myForm.Num.focus() ; return false;
+			}
+			return( true );
+			}
+</script>
+</head>
+<body style="height: 960px;">
+<div class="header">
+	<div style="position: absolute; left: 20px; top: 12px; font-family: Calibri;"><font size="7">T</font><font size="5">HE BRITISH HOTEL</font>
+	</div>
+	<div style="position: absolute; left: 855px; top: 35px; font-family: Calibri; width: 75px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="Index.html">HOME</a></font>
+	</div>
+	<div style="position: absolute; left: 960px; top: 35px; font-family: Calibri; width: 130px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="PriceCal.html">Price Calculator</a></font>
+	</div>
+	<div style="position: absolute; left: 1120px; top: 35px; font-family: Calibri; width: 80px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="Room.html">ROOMS</a></font>
+	</div>
+	<div style="position: absolute; left: 1230px; top: 35px; font-family: Calibri; width: 90px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="Services.html">SERVICES</a></font>
+	</div>
+	<div style="position: absolute; left: 1350px; top: 35px; font-family: Calibri; width: 110px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="ContactUs.html">CONTACT US</a></font>
+	</div>
+
+</div>
+<form style="position: relative; top: 120px;" name="myForm" onsubmit="return(Validate());">
+	<table cellpadding="20px" border="2px solid black">
+		<tr>
+			<td>Name: </td>
+			<td><input type="text" name="Name" size=40 maxlength="30"></td>
+		</tr>
+		<tr>
+			<td>Email: </td>
+			<td><input type="Email" name="Email" size="40"></td>
+		</tr>
+		<tr>
+			<td>Contact Number:</td>
+			<td><input type="text" name="Num" maxlength="10" size="40"></td>
+		</tr>
+		<tr>
+			<td>Message: </td>
+			<td><textarea rows="6" cols="30"></textarea>
+		</tr>
+		<tr >
+			<td colspan="2"><input type="submit" name="BtnSubmit" value="Submit"></td>
+		</tr>
+	</table>
+</form>
+</div>
+<div class="container">
+	<h2 align="center">The British Hotel</h2>
+	<pre style="position:relative; left: 10px; top: 10px;">Tahachal Kathmandu, Nepal
+Email: sshail20@tbc.edu.np
+Thebrithotel.com.np</pre>
+	<pre style="position:absolute; right: 10px; top: 60px;">
+	Main Line: 4232312, 112134132 Ext: 3333
+        Fax: +977 1-42312312, 423213
+        Post Box: 99000
+		</pre>
+		<a href="https://www.thebritishcollege.edu.np/" target="_blank">Click here</a>
+</div>
+<div class="footer" >
+		<pre><font face="Times New Roman">        Name of Site : Article Writer 	         Address: Thapathali, Kathmandu        		 Contact NO.: 980808080       		  Email: sshail20@tbc.edu.np</font></pre>
+	</div>
+	<div class="container2">
+		<h2 style="color: red;" align="center">Booking information / inquiries</h2>
+		<pre>
+
+"For Hotel Reservations, please contact directly to the following address / phone / email only"
+
+Reservations Department
+The British Kathmandu
+Post Box 97, Tahachal, Kathmandu, Nepal
+Main Line: +977 1 4273999 | Fax: +977 1 4272205
+Email: res.ktm@british.com or shl@british.com
+
+Reservations Department
+British Westend Premier
+Bhujaigaun, Basudevpur, Nepalgunj, Nepal
+Main Line- 081 - 551145/48/86/87
+Email- reservation@brit.com.np
+		</pre>
+	</div>
+</body>
+</html>

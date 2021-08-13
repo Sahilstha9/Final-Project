@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rooms</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		table{
+			position: absolute;
+			top: 150px;
+			border: 2px solid black;
+		}
+		.cl{
+			column-span: 2;
+		}
+	</style>
+	<script type = "text/javascript">
+		function vRooms() {
+			if(document.Rooms.Room.value == "1") {
+				var adult,child, total;
+				adult = parseInt(document.Rooms.Adult.value);
+				child = parseInt(document.Rooms.Child.value);
+				total = adult * 100 + child * 25;
+				alert("Your total sum is: " + '$' + total);
+				document.Rooms.Adult.focus();
+				document.Rooms.Child.focus();
+			}
+			if( document.Rooms.Room.value == "2" ) {
+				var adult,child, total;
+				adult = parseInt(document.Rooms.Adult.value);
+				child = parseInt(document.Rooms.Child.value);
+				total = adult * 200 + child * 50;
+				alert("Your total price will be: " + '$' + total);
+				document.Rooms.Adult.focus();
+				document.Rooms.Child.focus();
+							}
+			if( document.Rooms.Room.value == "3" ) {
+				var adult,child, total;
+				adult = parseInt(document.Rooms.Adult.value);
+				child = parseInt(document.Rooms.Child.value);
+				total = adult * 300 + child * 75;
+				alert("Your total price will be: " + '$' + total);
+				document.Rooms.Adult.focus();
+				document.Rooms.Child.focus();
+			}
+		}
+
+		function vServices() {
+			if(document.Services.Service.value == "1") {
+				var adult,child, total;
+				adult = parseInt(document.Services.Adult.value);
+				child = parseInt(document.Services.Child.value);
+				total = adult * 10 + child * 0;
+				alert("Your total sum is: " + '$' + total);
+				document.Services.Adult.focus();
+				document.Services.Child.focus();
+			}
+			if( document.Services.Service.value == "2" ) {
+				var adult,child, total;
+				adult = parseInt(document.Services.Adult.value);
+				child = parseInt(document.Services.Child.value);
+				total = adult * 10 + child * 2;
+				alert("Your total price will be: " + '$' + total);
+				document.Services.Adult.focus();
+				document.Services.Child.focus();
+							}
+			if( document.Services.Service.value == "3" ) {
+				var adult,child, total;
+				adult = parseInt(document.Services.Adult.value);
+				child = parseInt(document.Services.Child.value);
+				if (child > 0) {
+					alert("Sorry children not allowed!");
+					return;
+				}
+				total = adult * 3 + child * 0;
+				alert("Your total price will be: " + '$' + total);
+				document.Services.Adult.focus();
+				document.Services.Child.focus();
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+	<div class="header">
+	<div style="position: absolute; left: 20px; top: 12px; font-family: Calibri;"><font size="7">T</font><font size="5">HE BRITISH HOTEL</font>
+	</div>
+	<div style="position: absolute; left: 855px; top: 35px; font-family: Calibri; width: 75px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="Index.html">HOME</a></font>
+	</div>
+	<div style="position: absolute; left: 960px; top: 35px; font-family: Calibri; width: 130px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="PriceCal.html">Price Calculator</a></font>
+	</div>
+	<div style="position: absolute; left: 1120px; top: 35px; font-family: Calibri; width: 80px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="Room.html">ROOMS</a></font>
+	</div>
+	<div style="position: absolute; left: 1230px; top: 35px; font-family: Calibri; width: 90px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="Services.html">SERVICES</a></font>
+	</div>
+	<div style="position: absolute; left: 1350px; top: 35px; font-family: Calibri; width: 110px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="ContactUs.html">CONTACT US</a></font>
+	</div>
+
+</div>
+	<div style="position: absolute; left: 1350px; top: 35px; font-family: Calibri; width: 110px; border-right: 2px solid black; "><font size="4" color="#004488"><a href="ContactUs.html">CONTACT US</a></font>
+	</div>
+	</div>
+
+	<table cellpadding="40px" border="2px solid black">
+		<caption>ROOM PRICES</caption>
+		<tr>
+			<td colspan="3">Rooms</td>
+			<td>Adults</td>
+			<td>Children</td>
+		</tr>
+		<tr>
+			<td colspan="3">Single King Bed</td>
+			<td>$100</td>
+			<td>$25</td>
+		</tr>
+		<tr>
+			<td colspan="3">Deluxe Bed</td>
+			<td>$200</td>
+			<td>$50</td>
+		</tr>
+		<tr>
+			<td colspan="3">Suite</td>
+			<td>$300</td>
+			<td>$75</td>
+		</tr>
+	</table>
+	<table cellpadding="40px" border="2px solid black" style="position: relative; left: 1000px">
+		<caption>SERVICES PRICES</caption>
+		<tr>
+			<td colspan="3">SERVICES</td>
+			<td>Adults</td>
+			<td>Children</td>
+		</tr>
+		<tr>
+			<td colspan="3">Jacuzzi</td>
+			<td>$10</td>
+			<td>N/A</td>
+		</tr>
+		<tr>
+			<td colspan="3">Swimming Pool</td>
+			<td>$10</td>
+			<td>$2</td>
+		</tr>
+		<tr>
+			<td colspan="3">GYM</td>
+			<td>$3</td>
+			<td>Not Allowed</td>
+		</tr>
+	</table>
+	<hr width="100%" style="position: relative; top: 200px; height: 10px; background: black;" >
+	<h1 align="center" style="position: relative; top: 200px;"><font face="Times New Roman">Price Calculator</font></h1>
+	<hr width="50px" align="center" style="position: relative; top: 190px; color: red;">
+	<form name = "Rooms" onsubmit = "return(vRooms());">
+	<table cellspacing = "2" cellpadding = "20" border = "1" style="position: absolute; top: 800px; left: 200px;">
+	<tr> <td align = "right">Room</td> <td>
+		<select name = "Room">
+		<option value = "1">Single King Bed</option>
+		<option value = "2">Deluxe</option>
+		<option value = "3">Suite</option>
+	</select>
+    </td> </tr>
+	<tr> 
+		<td align = "right">Adults: </td>
+		 <td><input type = "text" name = "Adult"></td>
+		  </tr>
+	<tr> <td align = "right">Children</td> <td><input type = "text" name = "Child" /></td> </tr>
+	<tr> <td align = "right"></td> <td><input type = "submit" value = "Calculate" /></td> </tr>
+	</table>
+	</form>
+	<form name = "Services" onsubmit = "return(vServices());">
+		<table cellspacing = "2" cellpadding = "20" border = "1" style="position: absolute; top: 800px; right: 200px;">
+			<tr> 
+				<td align = "right">Services</td> 
+				<td>
+				<select name = "Service">
+				<option value = "1">Jacuzzi</option>
+				<option value = "2">Swimming Pool</option>
+				<option value = "3">Gym</option>
+			</select>
+		    </td>
+		     </tr>
+			<tr> 
+				<td align = "right">Adults: </td> 
+				<td><input type = "text" name = "Adult" /></td>
+			 </tr>
+			<tr> 
+				<td align = "right">Children</td>
+				 <td><input type = "text" name = "Child" /></td>
+			 </tr>
+			<tr> 
+				<td align = "right"></td> 
+				<td><input type = "submit" value = "Calculate" /></td> 
+			</tr>
+		</table>
+	</form>
+	<A HREF="http://newwindow.html" TARGET="_blank">a new window</A>+
+		<div class="footer" >
+		<pre><font face="Times New Roman">        Name of Site : Article Writer 	         Address: Thapathali, Kathmandu        		 Contact NO.: 980808080       		  Email: sshail20@tbc.edu.np</font></pre>
+	</div>
+</body>
+</html>
