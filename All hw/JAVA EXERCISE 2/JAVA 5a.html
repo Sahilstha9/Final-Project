@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <script type="text/javascript">
+        function check_field(id) {
+            var field = document.getElementById(id);
+ 
+            if (isNaN(field.value)) {
+                alert('not a number');
+            }
+            else
+                alert('its a number')
+        }
+    </script>
+    </head>
+    <body>
+    <form>
+        <input type="text" id="t_field"/>
+        <input type="button" value="check" onclick="check_field('t_field');"/>
+    </form>
+    </body>
+</html>
